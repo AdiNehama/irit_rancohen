@@ -1,3 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gveret+Levin&display=swap');
+
+@font-face {
+  font-family: 'Handwriting';
+  src: url('../fonts/fontHebrow.woff') format('truetype');
+}
+
+h1 {
+  font-family: 'Handwriting', sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.read-the-docs {
+  color: #444;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -35,8 +58,4 @@
 
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

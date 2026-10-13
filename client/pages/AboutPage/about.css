@@ -1,0 +1,248 @@
+/* About Page Styles */
+.about-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    color: #333;
+    font-family: 'text-font';
+  }
+  
+@font-face {
+    font-family: 'Handwriting';
+    src: url('../fonts/fontHebrow.woff') format('truetype');
+  }
+  
+
+@font-face {
+    font-family: 'text-font';
+    src: url('../../fonts/VarelaRound-Regular.ttf') format('truetype');
+  }
+  
+.about-header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo-image {
+    max-width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .intro-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title, .why-me-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .about-title::after, .why-me-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to left, #f0f0f0, #6a4c2b, #f0f0f0);
+  }
+  
+  .text-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    
+  }
+    
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5.5rem;
+    align-items: center;
+  }
+  
+  .photo-item{
+    text-align: center;
+    padding: 1rem;
+    background: #c1af618a;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 269px;
+  }
+  .values-section {
+    padding: 1rem ;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem ;
+  }
+  
+  .value-item {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .value-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .value-icon {
+    color: #6a4c2b;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .value-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .value-item p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .why-me-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .why-me-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .text-side {
+    padding-right: 2rem;
+  }
+  
+  .image-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .office-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .office-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .contact-cta {
+    text-align: center;
+    
+  }
+  
+  .cta-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    color: #6a4c2b;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .values-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .why-me-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .text-side {
+      padding-right: 0;
+    }
+  
+    .image-side {
+      order: -1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 1rem;
+      padding-top: 100px;
+    }
+  
+    .about-content {
+      gap: 2rem;
+    }
+  
+    .values-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .about-title, .why-me-title {
+      font-size: 2rem;
+    }
+  
+    .text-content {
+      font-size: 1rem;
+    }
+  
+    .contact-cta {
+      padding: 2rem 1rem;
+    }
+  }

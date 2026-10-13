@@ -1,0 +1,236 @@
+.mediation-container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    color: #333;
+    padding-top: 120px;
+  }
+  
+  .mediation-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+
+  }
+  
+  .hero-section {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .page-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .page-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #f0f0f0, #6a4c2b, #f0f0f0);
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #6a4c2b;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  
+  .main-content {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .intro-text1, .main-text1 {
+    font-size: 1.1rem !important;
+    line-height: 1.8 !important;
+    text-align: justify !important;
+    width: 100% !important;
+  }
+  
+  .image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mediation-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .mediation-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .benefits-section {
+    padding: 2rem 0;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  
+  .benefit-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit-icon {
+    color: #6a4c2b;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .benefit-card p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .closing-section {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .closing-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  
+  .cta-section {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, #6a4c2b 0%, #8b6d4c 100%);
+    border-radius: 15px;
+    color: white;
+  }
+  
+  .cta-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    color: #6a4c2b;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-column {
+      order: -1;
+    }
+  
+    .page-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mediation-container {
+      padding: 1rem;
+      padding-top: 100px;
+    }
+  
+    .mediation-content {
+      gap: 2rem;
+    }
+  
+    .benefits-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .main-content {
+      padding: 1.5rem;
+    }
+  
+    .page-title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .intro-text, .main-text, .closing-text {
+      font-size: 1rem;
+    }
+  
+    .cta-section {
+      padding: 2rem 1rem;
+    }
+  }

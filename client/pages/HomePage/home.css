@@ -1,0 +1,243 @@
+/* General Styling */
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Gveret+Levin&display=swap');
+
+@font-face {
+  font-family: 'Handwriting';
+  src: url('../fonts/fontHebrow.woff') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'text-font';
+  src: url('../../fonts/VarelaRound-Regular.ttf') format('truetype');
+}
+
+.home-container body {
+  font-family: 'Handwriting','text-font';
+  direction: rtl;
+  background-color: #fff;
+  color: #333;
+}
+
+.home-container {
+  width: 100%;
+
+}
+
+.home-container .header-section {
+
+  position: relative;
+  text-align: center;
+  color: #fff; 
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.home-container .header-image {
+  width: 1500px;
+  height: auto;
+  opacity: 0.7; 
+  filter: brightness(0.3); 
+}
+
+.home-container .header-text {
+  font-family: 'Handwriting','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; 
+}
+.header-text-second{
+  font-family:  'text-font';
+}
+
+.home-container .header-text h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow for better readability */
+}
+
+.home-container .header-text h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.home-container .header-text p {
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* General Container */
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+  font-family:  'text-font';
+  height: 100%;
+
+}
+
+/* Slider Container */
+/* Slider Container */
+.intro-slider {
+  position: relative !important;
+  width: 65% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  border-radius: 5%;
+}
+
+/* Slider Images */
+.slider {
+  display: flex !important;
+  transition: transform 0.5s ease-in-out !important;
+}
+
+.slider img {
+  width: 100% !important;
+  flex-shrink: 0 !important;
+}
+
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background: rgba(0, 0, 0, 0.19) !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+}
+
+.prev-btn {
+  left: 10px !important;
+}
+
+.next-btn {
+  right: 10px !important;
+}
+
+/* Text Section */
+.intro-text {
+  width: 55% !important;
+  text-align: right !important;
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  font-family: 'text-font' !important;
+  direction: rtl !important;
+}
+
+
+
+
+
+
+.home-container .counter-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-family:  'text-font';
+
+  
+}
+
+.home-container .counter-item {
+  text-align: center;
+  font-family:  'text-font';
+
+}
+
+.home-container .counter-item h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+  font-family:  'text-font';
+
+}
+
+.home-container .counter-item p {
+  font-size: 1rem;
+  color: #555;
+  font-family:  'text-font';
+
+}
+
+.home-container .expertise-section {
+  display: grid;
+margin-bottom: 70px;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* spacing between items */
+  padding: 30px;
+}
+
+.home-container .expertise-item {
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 375px;
+  height: 200px;
+  margin: auto;
+  
+}
+
+.home-container .expertise-item:hover {
+  background-color: #f0f0f0;
+  border-color: #ddd;
+}
+
+
+
+.home-container .expertise-item h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  font-family:  'text-font';
+
+}
+.expertise-title{
+  margin-top: 48px;
+  text-align: center; 
+  font-family:  'text-font';
+  /* ממרכז את הטקסט אופקית */
+  
+}
+
+.home-container .expertise-item p {
+  font-size: 1rem;
+  color: #333;
+  font-family:  'text-font';
+
+}
+.expertise-icon {
+  font-size: 2.5rem; /* גודל האייקון */
+  margin-bottom: 10px;
+  color: #ffff92; /* צבע זהב */
+  animation: sparkle 2s infinite ease-in-out; /* אנימציה */
+  filter: brightness(1.2) contrast(1.2); /* אפשר לשחק עם המסננים כדי ליצור אפקטים דמויי גרדיאנט */
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    filter: brightness(1.1) contrast(1.2) drop-shadow(0 0 2px #ab9100) drop-shadow(0 0 3px #ffde65);
+  }
+  50% {
+    filter: brightness(1.3) contrast(1.3) drop-shadow(0 0 3px #906c00) drop-shadow(0 0 6px #ffd485);
+  }
+}
+
+
+
+.home-container section {
+  animation: fadeIn 1s ease;
+}
+  

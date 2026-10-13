@@ -1,0 +1,110 @@
+
+
+@font-face {
+    font-family: 'text-font';
+    src: url('../../fonts/VarelaRound-Regular.ttf') format('truetype');
+  }
+
+.services-container body {
+    font-family: 'Handwriting','text-font';
+    direction: rtl;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+  }
+  
+  .services-container {
+    width: 100%;
+    margin-bottom: 70px;
+
+  }
+
+  .services-container .expertise-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    padding: 30px;
+    margin: auto;
+}
+
+.services-container .expertise-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* שתי עמודות */
+    align-items: center;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+  .image-right .text-content {
+    order: 1; /* טקסט מופיע ראשון */
+    height: 100%;
+
+  }
+  
+  .image-right .image-content {
+    order: 2; /* תמונה מופיעה אחרונה */
+  }
+  
+  .image-left .text-content {
+    order: 2; /* טקסט מופיע אחרון */
+    height: 100%;
+
+  }
+  
+  .image-left .image-content {
+    order: 1; 
+    /* תמונה מופיעה ראשונה */
+  }
+
+.services-container .expertise-item:hover {
+    background-color: #f0f0f0;
+    border-color: #ddd;
+}
+
+.services-container .expertise-item h3 {
+    font-size: 1.5rem;
+    font-family: 'text-font';
+    text-align: right;
+
+}
+
+.services-container .expertise-item p {
+    font-size: 1rem;
+    color: #333;
+    font-family: 'text-font';
+    text-align: right;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.img-item {
+    width: 90%; /* התאמת גודל התמונה */
+    max-width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    margin: auto; /* ממרכז את התמונה אנכית */
+}
+
+  .services-container .expertise-item:hover {
+    background-color: #f0f0f0;
+    border-color: #ddd;
+  }
+  
+  
+ .services-container .expertise-title{
+    margin-top: 48px;
+    text-align: center; 
+    font-family:  'text-font';
+    font-size: 1.7rem;
+
+    /* ממרכז את הטקסט אופקית */
+  }
+
